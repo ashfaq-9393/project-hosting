@@ -7,15 +7,46 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.image-container {
+    display: flex;
+    flex-direction: column; /* Arranges images vertically */
+    align-items: center; /* Centers images horizontally */
+    gap: 20px; /* Adds spacing between images and descriptions */
+}
+.image-container {
+    display: flex;
+    flex-direction: row; /* Arranges images horizontally */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds spacing between images */
+}
+.image-container {
+    display: flex; /* Places images in a horizontal row */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds spacing between images */
+}
+.image-item {
+    text-align: center; /* Centers the description below each image */
+}
+img {
+    width: 250px; /* Sets a fixed width for images */
+    height: 200px; /* Sets a fixed height for images */
+    object-fit: cover; /* Ensures images fit nicely within the dimensions */
+    border: 1px solid #ccc; /* Adds a light border around images */
+    border-radius: 8px; /* Rounds the edges slightly */
+}
+
 
 body {
-    background-color:  #0f0b0f;
-    color: #fff;
+    background-color:  #401fb842;
+    color: #110909;
     text-align: center;
+    font-size: large;
+    padding: 50px;
+    
 }
 
 header {
-    background: #2972e0;
+    background: #457ac9;
     padding: 15px;
     font-size: 24px;
     font-weight: bold;
@@ -29,7 +60,10 @@ header {
 
 h2 {
     margin-top: 20px;
-    color: #ff4081;
+    color: #1a1818;
+}
+.p{
+    font-size: 25px;
 }
 
 .workflow {
@@ -52,7 +86,7 @@ img {
 }
 
 .download-btn {
-    background: #ff4081;
+    background: #0b15aa;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -68,6 +102,43 @@ img {
 
 footer {
     margin-top: 20px;
-    background: #222;
+    background: #457ac9;
     padding: 10px;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to create multiple rows */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds spacing between rows and items */
+    padding: 10px;
+    /*background-color: #401fb842;*/
+    width: 800px; /* Ensures the div spans the full width of its parent */
+    margin: 0 auto; /* Centers the div within its parent element */
+}
+
+.point {
+    width: 23%; /* Adjust width so 4 fit in a row */
+    padding: 10px;
+    text-align: center;
+    background-color: #fc171738; /* Shaded background */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 100PX;
+    width: 250px;
+}
+.text-container {
+    font-size: 40px; /* Increases text size */
+    text-align: left; /* Aligns text to the left */
+    line-height: 1.5; /* Improves readability */
+    color: #333; /* Sets text color */
+    margin: 20px; /* Adds spacing around the div */
+    padding: 15px; /* Adds inner spacing */
+    /*border: 2px solid #ccc; /* Adds a border around the div */
+    /*border-radius: 8px; /* Rounds the corners of the div */
+    /*background-color: #f9f9f9; /* Sets a light background color */
+    margin-left: 450px;
+    font-style: bold;
 }
